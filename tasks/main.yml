@@ -1,0 +1,18 @@
+---
+- include: debian.yml
+  when: ansible_os_family == 'Debian'
+  tags: [ logstash, logstash-install ]
+
+- name: Configure logstash
+  template:
+    src: logstash.conf.j2
+    dest: /etc/logstash/conf.d/{{ item }}.conf
+    group: root
+    owner: root
+    mode: 0644
+  with_items: logstash_config.keys()
+  when: logstash_config|length > 0
+  notify: restart logstash
+  tags: [ logstash, logstash-configure ]
+
+

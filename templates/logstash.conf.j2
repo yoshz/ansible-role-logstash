@@ -1,0 +1,3 @@
+{{ item }} { {% for rule in logstash_config[item] %}{{ logstash_config[item][rule]|regex_replace("^|\n", "\n  ") }}{% endfor %}
+
+}

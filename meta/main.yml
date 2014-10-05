@@ -1,0 +1,18 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: yoshz
+  description: Logstash for Linux.
+  license: "MIT"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - system
+    - monitoring

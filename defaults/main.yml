@@ -1,0 +1,6 @@
+---
+workspace: /root
+logstash_path: /opt/logstash
+logstash_version: 1.4.2
+logstash_java_package: openjdk-7-jre-headless
+logstash_config: []
