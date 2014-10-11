@@ -1,10 +1,19 @@
-# Ansible Role: Logstash
+logstash
+========
 
-An Ansible Role that installs Logstash on Debian/Ubuntu.
+An Ansible Role for configuring Logstash on Debian/Ubuntu.
 
-## Role Variables
 
-Example:
+Requirements:
+-------------
+
+None.
+
+
+Role Variables
+--------------
+
+Example configuration:
 
     logstash_config:
       input:
@@ -29,16 +38,15 @@ Example:
             add_tag => [ "multilined" ]
           }
 
-## Example Playbook
+
+Example Playbook:
 
     - hosts: search
       roles:
         - { role: logstash }
 
-## License
 
-MIT / BSD
+License
+-------
 
-## Author Information
-
-This role was created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
+MIT

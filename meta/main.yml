@@ -1,9 +1,7 @@
 ---
-dependencies: []
-
 galaxy_info:
-  author: yoshz
-  description: Logstash for Linux.
+  author: "Yosh de Vos"
+  description: An Ansible role for configuring Logstash on Debian/Ubuntu.
   license: "MIT"
   min_ansible_version: 1.4
   platforms:
@@ -16,3 +14,4 @@ galaxy_info:
   categories:
     - system
     - monitoring
+  dependencies: []
